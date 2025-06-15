@@ -3,12 +3,15 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/cloudinary'
   ],
   compatibilityDate : '2025-06-15',
-
+cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+  },
   css: ['~/assets/css/tailwind.css'],
-
   colorMode: {
     preference: 'system',
     fallback: 'light',

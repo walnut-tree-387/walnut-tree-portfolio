@@ -44,51 +44,47 @@ interface ImageData {
 }
 const images: ImageData[] = [
   {
-    src: '/1.JPG',
-    title: 'Mountain Adventure'
+    src: 'DSCF4449_yacnlv',
+    title: 'Shahbag in a monsoon evening'
   },
   {
-    src: '/2.JPG',
-    title: 'Misty Forest'
+    src: 'DSCF4549_git5v2',
+    title: 'Mistic Rain'
   },
   {
-    src: '/3.JPG',
-    title: 'Ocean Waves'
+    src: 'DSCF4519_jx3yip',
+    title: 'Monsoon Rain In a lake in JU'
   },
   {
-    src: '/4.JPG',
-    title: 'Cityscape at Night'
+    src: 'DSCF4581_c1k6lb',
+    title: 'Two Friends in a Rainy Day'
   },
   {
-    src: '/5.JPG',
-    title: 'Sunny Desert'
+    src: 'DSCF4566_vgjaox',
+    title: 'Cycling in amidst Rain'
   },
   {
-    src: '/6.JPG',
-    title: 'Winter Mountains'
+    src: '1000419068_lybsyy',
+    title: 'Lonely Boy mourning in a Rainy Day'
   },
 {
-    src: '/7.JPG',
-    title: 'Ocean Waves'
+    src: 'DSCF4255_dtbte6',
+    title: 'Girl cyclist in a sunny day'
   },
   {
-    src: '/8.JPG',
-    title: 'Cityscape at Night'
+    src: 'DSCF4328_b65gjr',
+    title: 'Paddler from Dilkusha'
   },
   {
-    src: '/9.JPG',
-    title: 'Sunny Desert'
+    src: 'DSCF4629_dtcaq9',
+    title: 'Couple in a Rainy Day'
   },
   {
-    src: '/10.JPG',
-    title: 'Winter Mountains'
+    src: '_DSF7420_h1eksk',
+    title: 'Cloudy sky'
   }
 ]
 const reels = [
-  { src: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-  { src: 'https://www.w3schools.com/html/movie.mp4' },
-  { src: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-  { src: 'https://www.w3schools.com/html/movie.mp4' },
   { src: '/RainInJU.mp4' },
   { src: 'tajhall.mp4' },
   { src: '/RainInJU.mp4' },
