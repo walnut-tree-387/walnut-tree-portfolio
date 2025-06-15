@@ -3,7 +3,7 @@
     <div :class="{ 'dark': $colorMode.value === 'dark' }">
       <NuxtLayout>
         <NuxtPage />
-        <Toaster class="pointer-events-auto"  />
+        <Toaster class="pointer-events-auto" position="top-right"  />
       </NuxtLayout>
     </div>
   </ColorScheme>

@@ -29,7 +29,7 @@ const formattedDate = new Date().toLocaleString('en-US', {
 });
 const router = useRouter();
 const onSubmit = handleSubmit((values) => {
-    router.push('/').then(() => {
+    router.push('/dashboard').then(() => {
         toast(`${values.name} Registered Successfully`, {
             description: formattedDate,
         });
@@ -40,17 +40,19 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-  <form class="w-full max-w-sm space-y-6" @submit.prevent="onSubmit">
-    <FormField v-slot="{ componentField }" name="name">
-      <FormItem>
-        <FormLabel>What's your name?</FormLabel>
-        <FormControl>
-          <Input type="text" placeholder="Enter your name" v-bind="componentField" />
-        </FormControl>
-        <FormMessage />
-      </FormItem>
-    </FormField>
+<form class="w-full max-w-sm space-y-4" @submit.prevent="onSubmit">
+  <FormField v-slot="{ componentField }" name="name">
+    <FormItem>
+      <FormControl>
+        <Input type="text" placeholder="Enter your name" v-bind="componentField" class="w-full" />
+      </FormControl>
+      <FormMessage />
+    </FormItem>
+  </FormField>
+  <div class="flex justify-center">
     <Button type="submit">Submit</Button>
-  </form>
+  </div>
+</form>
+
 </template>
 
