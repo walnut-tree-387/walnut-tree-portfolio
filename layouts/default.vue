@@ -5,7 +5,11 @@
             <div class="gap-6 flex"></div>
             <ColorModeSwitch />
         </div>
-        <slot />
-        <Footer />
+        <div class="flex-grow px-6">
+            <slot />
+        </div>
+        <div class="flex mt-10">
+            <Footer />
+        </div>
     </div>
 </template>

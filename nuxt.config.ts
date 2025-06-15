@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss'
   ],
+  compatibilityDate : '2025-06-15',
 
   css: ['~/assets/css/tailwind.css'],
 
