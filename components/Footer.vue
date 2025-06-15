@@ -10,10 +10,14 @@
                 <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
             </li>
             <li>
-                <a href="#" class="hover:underline me-4 md:me-6">Github</a>
+                <a href="https://github.com/walnut-tree-387" class="hover:underline me-4 md:me-6">Github</a>
             </li>
             <li>
-                <a href="#" class="hover:underline">Contact</a>
+                <a
+                    href="mailto:rahamanmohammadataur@gmail.com?subject=Contact%20Request&body=Hi%20walnut%20tree,"
+                >
+                    Contact
+                </a>
             </li>
         </ul>
     </footer>
