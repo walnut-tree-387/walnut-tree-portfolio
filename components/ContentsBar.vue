@@ -85,11 +85,10 @@ const images: ImageData[] = [
   }
 ]
 const reels = [
-  { src: '/RainInJU.mp4' },
-  { src: 'tajhall.mp4' },
-  { src: '/RainInJU.mp4' },
-  { src: 'tower.mp4' },
-  { src: 'tajhall.mp4' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/RainInJU_i2whkr' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/mohabbat2_udgl7z' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/badla_dine2_xzc65t' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/output_ybwbnc' },
   
 ]
 </script>

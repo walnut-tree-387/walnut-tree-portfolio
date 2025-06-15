@@ -28,9 +28,11 @@
     </div>
 
     <!-- Cloudinary Image -->
-    <CldImage
+  <CldImage
       :src="src"
       :alt="title"
+      width="600"
+      height="900"
       class="w-full h-full object-cover"
       loading="lazy"
       @load="isLoading = false"

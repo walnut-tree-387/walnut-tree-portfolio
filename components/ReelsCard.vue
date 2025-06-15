@@ -7,6 +7,9 @@
         class="w-full h-full object-cover"
         @click="togglePlay"
         controls
+        autoplay
+        muted
+        loop
       ></video>
     </div>
 

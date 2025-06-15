@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     '@nuxtjs/cloudinary'
   ],
   compatibilityDate : '2025-06-15',
-cloudinary: {
-    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-  },
   css: ['~/assets/css/tailwind.css'],
   colorMode: {
     preference: 'system',
