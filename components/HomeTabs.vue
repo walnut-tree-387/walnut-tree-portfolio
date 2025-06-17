@@ -4,7 +4,6 @@
       class="flex justify-center gap-4 -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400"
       role="tablist"
     >
-      <!-- Images Tab -->
       <li role="presentation">
         <Button
           :class="[
@@ -20,7 +19,6 @@
         </Button>
       </li>
 
-      <!-- Reels Tab -->
       <li role="presentation">
         <Button
           :class="[

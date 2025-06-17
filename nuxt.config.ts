@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
-    '@nuxtjs/cloudinary'
+    '@nuxtjs/cloudinary',
+    'v-gsap-nuxt'
   ],
   compatibilityDate : '2025-06-15',
   css: ['~/assets/css/tailwind.css'],
@@ -27,5 +28,13 @@ export default defineNuxtConfig({
   shadcn: {
     prefix: '',
     componentDir: './components/ui'
+  },
+  vgsap: {
+    composable: true,
+    breakpoint: 768,
+    scroller: '',
+    extraPlugins: {
+      scrollTrigger: true
+    }
   }
 })
