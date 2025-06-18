@@ -34,7 +34,11 @@ export default defineNuxtConfig({
     breakpoint: 768,
     scroller: '',
     extraPlugins: {
-      scrollTrigger: true
+      scrollTrigger: true,
+      draggable: true,
     }
-  }
+  },
+  plugins: [
+    { src: '~/plugins/gsap.client.ts', mode: 'client' }
+  ]
 })

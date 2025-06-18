@@ -5,6 +5,7 @@
     <h1 ref="line2" class="text-sm md:text-3sm font-italic text-black dark:text-white">
       Neither you are aware of this, nor the police.
     </h1>
+    <AnimatedImageSlider />
 </template>
 
 <script setup lang="ts">
