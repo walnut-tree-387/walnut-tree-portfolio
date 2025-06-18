@@ -5,7 +5,7 @@
   </div>
   <!-- <CoverVideo /> -->
   <AnimatedImageSlider />
-  <div class="mt-5 flexw-full max-w-md">
+  <div class="mt-15 flexw-full max-w-md">
     <AccessTokenForm />
   </div>
 </div>
