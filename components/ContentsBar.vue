@@ -1,14 +1,10 @@
 <template>
-  <div class="flex flex-col justify-center items-center p-4 bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen">
-    <!-- Tabs -->
+  <div class="flex w-full flex-col justify-center items-center bg-grey-100 text-black mb-6 dark:bg-gray-900 dark:text-white min-h-screen">
     <div class="flex justify-center items-center p-4">
       <HomeTabs v-model:selected="currentTab" />
     </div>
 
-    <!-- Divider -->
     <div class="h-px bg-gray-300 dark:bg-white w-full mb-4"></div>
-
-    <!-- Images Grid -->
     <div
       v-if="currentTab === 'images'"
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 mb-4 w-full"
@@ -21,7 +17,6 @@
       />
     </div>
 
-    <!-- Reels Grid -->
     <div
       v-else
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 mb-4 w-full"
@@ -85,11 +80,10 @@ const images: ImageData[] = [
   }
 ]
 const reels = [
-  { src: '/RainInJU.mp4' },
-  { src: 'tajhall.mp4' },
-  { src: '/RainInJU.mp4' },
-  { src: 'tower.mp4' },
-  { src: 'tajhall.mp4' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/RainInJU_i2whkr' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/mohabbat2_udgl7z' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/badla_dine2_xzc65t' },
+  { src: 'https://res.cloudinary.com/dmtpylpbb/video/upload/w_720,c_scale/output_ybwbnc' },
   
 ]
 </script>

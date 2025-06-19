@@ -5,12 +5,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
-    '@nuxtjs/cloudinary'
+    '@nuxtjs/cloudinary',
+    'v-gsap-nuxt'
   ],
   compatibilityDate : '2025-06-15',
-cloudinary: {
-    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-  },
   css: ['~/assets/css/tailwind.css'],
   colorMode: {
     preference: 'system',
@@ -30,5 +28,17 @@ cloudinary: {
   shadcn: {
     prefix: '',
     componentDir: './components/ui'
-  }
+  },
+  vgsap: {
+    composable: true,
+    breakpoint: 768,
+    scroller: '',
+    extraPlugins: {
+      scrollTrigger: true,
+      draggable: true,
+    }
+  },
+  plugins: [
+    { src: '~/plugins/gsap.client.ts', mode: 'client' }
+  ]
 })
