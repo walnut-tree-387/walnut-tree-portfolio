@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 
-export class StarsService {
+export class StarService {
   private stars!: THREE.Points
 
   constructor(private scene: THREE.Scene) {}
