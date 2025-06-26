@@ -17,6 +17,9 @@ export class SkyDomeService {
     scene.remove(this.skydome.getMesh())
     return scene
   }
+  public setPosition(x: number, y: number, z: number): void {
+    this.skydome.getMesh().position.set(x, y, z)
+  }
 
   public getSkydome(): Skydome {
     return this.skydome
