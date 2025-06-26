@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
-    '@nuxtjs/cloudinary',
+    // '@nuxtjs/cloudinary',
     'v-gsap-nuxt'
   ],
   compatibilityDate : '2025-06-15',
