@@ -8,26 +8,28 @@
 </template>
 
 <script setup lang="ts">
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+
 const line1 = ref<HTMLElement | null>(null)
 const line2 = ref<HTMLElement | null>(null)
-const gsap  = useGSAP()
+
+gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-  gsap.from(line1.value, { 
-    scrollTrigger: { trigger: line1.value, start: 'top 60%' }, 
+ gsap.from(line1.value, { 
+    scrollTrigger: { trigger: line1.value, start: 'top 60%'}, 
     opacity: 0, 
-    markers: true,
-    once: true,
     y: -100, 
     duration: 2.5
   })
-gsap.from(line2.value, { 
+
+  gsap.from(line2.value, { 
     scrollTrigger: { trigger: line2.value, start: 'top 78%' }, 
     opacity: 0, 
     y: -150, 
-    once: true,
-    markers: true,
-    duration:2.5
+    duration: 2.5
   })
 })
 </script>
