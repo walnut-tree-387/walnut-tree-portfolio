@@ -22,6 +22,12 @@ export class StarService {
     this.stars = new THREE.Points(geometry, material)
     this.scene.add(this.stars)
   }
+  public updateStarsColor(color: number): void {
+    if (this.stars && this.stars.material instanceof THREE.PointsMaterial) {
+      (this.stars.material as THREE.PointsMaterial).color.set(color)
+      this.stars.material.needsUpdate = true
+    }
+  }
 
   public removeStars(): void {
     if (this.stars) {
