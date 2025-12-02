@@ -5,8 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
-    // '@nuxtjs/cloudinary',
-    'v-gsap-nuxt'
+    'v-gsap-nuxt',
   ],
   compatibilityDate : '2025-06-15',
   css: ['~/assets/css/tailwind.css'],
@@ -32,13 +31,6 @@ export default defineNuxtConfig({
   vgsap: {
     composable: true,
     breakpoint: 768,
-    scroller: '',
-    extraPlugins: {
-      scrollTrigger: true,
-      draggable: true,
-    }
+    scroller: ''
   },
-  plugins: [
-    { src: '~/plugins/gsap.client.ts', mode: 'client' }
-  ]
 })
