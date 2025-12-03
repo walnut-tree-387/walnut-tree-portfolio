@@ -1,25 +1,25 @@
 <template>
     <div class="grid grid-cols-2 h-screen w-100vw ">
-        <div class="flex flex-col justify-center items-center bg-teal-800">
-            <p class="name text-2xl font-extrabold font-mono text-yellow-200">Ataur</p>
-            <p class="name text-2xl font-extrabold font-mono text-yellow-200">Rahaman</p>
-            <ol class="interest text-md font-mono font-bold text-yellow-200 pt-8 p-2">
+        <div class="flex flex-col justify-center items-center bg-gray-700">
+            <p class="name text-2xl font-extrabold font-mono text-gray-200">Ataur</p>
+            <p class="name text-2xl font-extrabold font-mono text-gray-200">Rahaman</p>
+            <ol class="interest text-md font-mono font-bold text-gray-200 pt-8 p-2">
                 <li> Research Interest:</li>
                 <li>@ NLP</li>
                 <li>@ Mining software repositories</li>
                 <li>@ Green coding</li>
             </ol>
         </div>
-        <div class="flex flex-col justify-center items-center bg-amber-800">
-            <section class="text-md font-mono font-bold text-yellow-200 mb-10">Working with</section>
+        <div class="flex flex-col justify-center items-center bg-gray-200">
+            <section class="text-md font-mono font-bold text-gray-700 mb-10">Working with</section>
             <SpringBootSvg />
             <VueSvg/>
         </div>
-        <div class="ataur absolute inset-20 flex items-start justify-center">
-            <div class="w-50 h-50 rounded-full shadow-2xl z-10 overflow-hidden ">
+        <div class="ataur absolute inset-x-10 top-20 md:inset-10 flex items-start justify-center">
+            <div class="w-3/10 aspect-square rounded-full shadow-2xl z-10 overflow-hidden ">
                     <img 
                         src="/ataur.JPG" 
-                        alt="Ataur Rahaman Avatar" 
+                        alt="Ataur Rahaman" 
                         class="w-full h-full object-cover"
                     />
             </div>
@@ -68,6 +68,3 @@ onMounted(() => {
 })
 const bio = ref('A software engineer professional with a strong foundation in object-oriented programming principles and am adept at utilizing languages like C++, Java, C#, Python, and Javascript. Beyond my professional role, I am actively exploring research areas in the broader field of Software Analytics with particular interest in Mining Software Repositories, studying Software Architectures and sustainable software practices.')
 </script>
-<style scoped>
-
-</style>

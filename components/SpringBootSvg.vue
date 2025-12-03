@@ -4,7 +4,7 @@
             <path id="springPath" fill="none" stroke="#6DB33F" stroke-width="5"
             d="M60 5 L110 32 L110 88 L60 115 L10 88 L10 32 Z" />
             <text x="50%" y="52%" font-size="14" font-family="mono"
-                fill="#6DB33F" text-anchor="middle" dominant-baseline="middle" class="name" opacity="1"
+                fill="gray-700" text-anchor="middle" dominant-baseline="middle" class="name" opacity="1"
             >
                 Spring Boot
             </text>
