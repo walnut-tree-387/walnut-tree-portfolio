@@ -8,14 +8,13 @@
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+const gsap = useGSAP()
 
 
 const line1 = ref<HTMLElement | null>(null)
 const line2 = ref<HTMLElement | null>(null)
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
  gsap.from(line1.value, { 
