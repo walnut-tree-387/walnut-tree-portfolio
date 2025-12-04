@@ -66,5 +66,4 @@ onMounted(() => {
     animateName()
     animateInterest()
 })
-const bio = ref('A software engineer professional with a strong foundation in object-oriented programming principles and am adept at utilizing languages like C++, Java, C#, Python, and Javascript. Beyond my professional role, I am actively exploring research areas in the broader field of Software Analytics with particular interest in Mining Software Repositories, studying Software Architectures and sustainable software practices.')
 </script>
