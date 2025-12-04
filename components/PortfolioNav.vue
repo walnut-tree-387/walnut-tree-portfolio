@@ -2,10 +2,17 @@
     <div class="flex justify-between w-screen m-4">
         <WalnutLogo class="z-30"/>
         <Icon ref="menuIcon" class="z-30 mr-10 mt-2" @click="toggleMenu" :name="iconName" :size="32"/>
-        <div class="backdrop z-20 h-100vh fixed rounded-full bg-white" style="width: 200px; height: 200px; transform: scale(0);"></div>
+        <div class="backdrop z-20 h-100vh fixed rounded-full bg-gray-200" style="width: 200px; height: 200px; transform: scale(0);"></div>
+        <div 
+            v-if="isOpen" 
+            class="fixed inset-y-20 inset-x-5 w-100vw z-30 bg-transparent"
+            >
+            <PortfolioMenuContent />
+        </div>
     </div>
 </template>
 <script setup lang="ts">
+
 const isOpen = ref(false)
 const iconName = ref('arcticons:hamburger-menu')
 const menuIcon = ref<HTMLElement | null>(null)
@@ -32,7 +39,7 @@ const openSplashScreen = () => {
     document.body.classList.add("overflow-hidden")
     const scaleSize = Math.max(window.innerWidth, window.innerHeight) / 100
     gsap.to('.backdrop', {
-        scale: scaleSize + 1,
+        scale: scaleSize + 2,
         duration: 0.6,
         ease: "power2.out",
     })

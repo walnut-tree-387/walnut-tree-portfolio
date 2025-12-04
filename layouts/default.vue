@@ -11,7 +11,7 @@
             <slot />
         </div>
         <div class="flex mt-10">
-            <Footer />
+            <Footer :bg-color="'bg-white'"/>
         </div>
     </div>
 </template>
