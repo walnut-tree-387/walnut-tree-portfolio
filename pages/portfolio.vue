@@ -11,7 +11,6 @@
   const gsap = useGSAP()
   onMounted(() => {
     let sections = gsap.utils.toArray(".slide")
-    console.log(sections)
     const timeline = gsap.timeline({
       defaults: {
         ease: 'none',
