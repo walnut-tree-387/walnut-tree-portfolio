@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col slides-wrapper">
-      <PortfolioHome class="firstSlide" />
-      <ExperienceSlide class="secondSlide" />
-  </div>
+    <div class="slides-wrapper h-100vh">
+      <PortfolioHome class="slide" />
+      <ExperienceSlide class="slide" />
+    </div>
 </template>
 <script setup lang="ts">
   definePageMeta({ 
@@ -10,22 +10,26 @@
   })
   const gsap = useGSAP()
   onMounted(() => {
+    let sections = gsap.utils.toArray(".slide")
     const timeline = gsap.timeline({
       defaults: {
-        ease: 'power1.inOut',
-        duration: 3
+        ease: 'none',
+        duration: 1
       },
       scrollTrigger: {
         trigger: '.slides-wrapper',
-        start: '25% center',
-        end: 'end end',
-        toggleActions: 'play none none reset',
-        // markers: true,
+        start: "top top",
+        end: () => "+=" + window.innerHeight * (sections.length - 1),
+        snap: 1 / (sections.length - 1),
         scrub: true,
+        pin: true,
+        markers: true
       }
     })
-    timeline.to('.secondSlide', {
-      y: -800
+    sections.forEach((sectin, i) => {
+      timeline.to(sections, { 
+        yPercent: -100 * i
+      })
     })
   })
 </script>
