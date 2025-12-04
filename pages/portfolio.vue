@@ -1,12 +1,12 @@
 <template>
-    <div class="slides-wrapper h-100vh">
+    <div class="slides-wrapper h-screen w-100vw">
       <PortfolioHome class="slide" />
       <ExperienceSlide class="slide" />
     </div>
 </template>
-<script setup lang="ts">
+<script setup>
   definePageMeta({ 
-    layout: 'bio',
+    layout: 'bio'
   })
   const gsap = useGSAP()
   onMounted(() => {
@@ -23,10 +23,9 @@
         snap: 1 / (sections.length - 1),
         scrub: true,
         pin: true,
-        markers: true
       }
     })
-    sections.forEach((sectin, i) => {
+    sections.forEach((section, i) => {
       timeline.to(sections, { 
         yPercent: -100 * i
       })
