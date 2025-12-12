@@ -6,8 +6,9 @@
             <ol class="interest text-md font-mono font-bold text-gray-200 pt-8 p-2">
                 <li> Research Interest:</li>
                 <li>@ NLP</li>
+                <li>@ Knowledge graph</li>
                 <li>@ Mining software repositories</li>
-                <li>@ Green coding</li>
+                <li>@ Software analytics</li>
             </ol>
         </div>
         <div class="flex flex-col justify-center items-center bg-gray-200">

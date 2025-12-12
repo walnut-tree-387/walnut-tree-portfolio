@@ -1,5 +1,5 @@
 <template>
-    <div class="slides-wrapper h-screen w-100vw">
+    <div class="slides-wrapper h-100vh w-100vw">
       <PortfolioHome class="slide" />
       <ExperienceSlide class="slide" />
     </div>
