@@ -4,7 +4,7 @@
     :size="size"
     v-bind="$attrs"
   >
-    <Icon :name="name" class="w-4 h-4" />
+    <Icon :name="name" class="w-4 h-4"/>
   </Button>
 </template>
 
