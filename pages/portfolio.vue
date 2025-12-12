@@ -1,34 +1,59 @@
 <template>
-    <div class="slides-wrapper h-100vh w-100vw">
-      <PortfolioHome class="slide" />
-      <ExperienceSlide class="slide" />
-    </div>
+  <div class="slides-wrapper h-screen w-100vw overflow-hidden">
+    <PortfolioHome class="slide" />
+    <ExperienceSlide class="slide" />
+    <ProjectSlide class="slide project-slide" />
+  </div>
 </template>
+
 <script setup>
-  definePageMeta({ 
-    layout: 'bio'
+definePageMeta({ layout: "bio" })
+
+const gsap = useGSAP()
+
+onMounted(() => {
+  const sections = gsap.utils.toArray(".slide")
+
+  // --- MAIN SLIDE SCROLL (SNAP FULL SCREEN SECTIONS) ---
+  gsap.to(".slides-wrapper", {
+    yPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".slides-wrapper",
+      start: "top top",
+      end: () => "+=" + window.innerHeight * (sections.length - 1),
+      scrub: true,
+      snap: 1 / (sections.length - 1), // snapping full screen
+      pin: true,
+    }
   })
-  const gsap = useGSAP()
-  onMounted(() => {
-    let sections = gsap.utils.toArray(".slide")
-    const timeline = gsap.timeline({
-      defaults: {
-        ease: 'none',
-        duration: 1
-      },
+
+  // --- PROJECT SLIDE ANIMATION (enter & exit from left) ---
+  gsap.fromTo(
+    ".project-slide",
+    { xPercent: -100, opacity: 0 },
+    {
+      xPercent: 0,
+      opacity: 1,
       scrollTrigger: {
-        trigger: '.slides-wrapper',
-        start: "top top",
-        end: () => "+=" + window.innerHeight * (sections.length - 1),
-        snap: 1 / (sections.length - 1),
+        trigger: ".project-slide",
+        start: "top 80%",
+        end: "top 20%",
         scrub: true,
-        pin: true,
       }
-    })
-    sections.forEach((section, i) => {
-      timeline.to(sections, { 
-        yPercent: -100 * i
-      })
-    })
+    }
+  )
+
+  // Exit to LEFT when scrolling UP
+  gsap.to(".project-slide", {
+    xPercent: -100,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".project-slide",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+    }
   })
+})
 </script>
