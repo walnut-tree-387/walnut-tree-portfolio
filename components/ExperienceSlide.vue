@@ -3,7 +3,7 @@
     <div class="absolute inset-0 bg-amber-200 [clip-path:polygon(0_0,100%_0,0_100%)]"></div>
     <div class="absolute inset-0 bg-amber-700 [clip-path:polygon(100%_0,100%_100%,0_100%)]"></div>
     <CarSvg id="car" class="absolute z-30 bottom-0 left-0 w-12 h-12 rotate-[-30deg]"/>
-    <PortfolioExperienceList/>
+    <PortfolioExperienceList  />
   </div>
 </template>
 <script setup lang="ts">
