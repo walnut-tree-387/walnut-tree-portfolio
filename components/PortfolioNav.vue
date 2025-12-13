@@ -7,7 +7,7 @@
             v-if="isOpen" 
             class="fixed inset-y-20 inset-x-5 w-100vw z-30 bg-transparent"
             >
-            <PortfolioMenuContent />
+            <PortfolioMenuContent @close="toggleMenu"/>
         </div>
     </div>
 </template>

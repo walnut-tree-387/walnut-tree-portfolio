@@ -1,17 +1,17 @@
 <template>
     <div class="flex flex-col h-screen justify-between  pb-4">
         <div class="flex flex-col">
-            <div class="border-b border-t border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
+            <div @click="openSlide('Experience')" class="border-b border-t border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Experience</span>
             </div>
-            <div class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
+            <div @click="openSlide('Projects')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Projects</span>
             </div>
 
-            <div class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
+            <div @click="openSlide('Publications')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Publications</span>
             </div>
-            <div class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
+            <div @click="openSlide('Certifications')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Certifications</span>
             </div>
         </div>
@@ -23,12 +23,18 @@
 </template>
 
 <script setup lang="ts">
-const bio = ref(`
-A software engineer professional with a strong foundation in object-oriented
-programming principles and am adept at utilizing languages like C++, Java,
-C#, Python, and Javascript. Beyond my professional role, I am actively 
-exploring research areas in the broader field of Software Analytics with 
-particular interest in Mining Software Repositories, studying Software 
-Architectures and sustainable software practices.
-`)
+import { goToSlide } from "@/composables/usePortfolioSlide"
+const emit = defineEmits<{
+  (e: 'close'): void
+}>()
+const map: Record<string, number> = {
+    Home: 0,
+    Experience: 1,
+    Projects: 2,
+    Publications: 3
+  }
+const openSlide = (slideName : string) => {
+    emit('close')
+    goToSlide(map[slideName])
+}
 </script>
