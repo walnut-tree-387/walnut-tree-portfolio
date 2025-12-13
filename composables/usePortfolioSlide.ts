@@ -13,7 +13,6 @@ const st = ScrollTrigger.getById("portfolio-slides")
   st.vars.snap = 0
 
   gsap.to(window, {
-    duration: 0.8,
     scrollTo: scrollTarget,
     ease: "power2.inOut",
     onComplete: () => {
