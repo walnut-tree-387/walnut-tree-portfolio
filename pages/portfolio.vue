@@ -3,7 +3,7 @@
     <PortfolioHome class="slide h-screen w-screen flex-shrink-0" />
     <ExperienceSlide class="slide h-screen w-screen flex-shrink-0" />
     <ProjectSlide class="slide project-slide h-screen w-screen flex-shrink-0" />
-    <CarSvg id="car" class="absolute z-30 top-10 left-0"/>
+    <CarSvg id="car" class="absolute z-30 bottom-20 left-0"/>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ const handleSlideChange = (newSlideIndex: any) => {
   isAnimating = true
 
   const leftX = 0
-  const rightX = window.innerWidth - 60
+  const rightX = window.innerWidth - 55
 
   const carStartPos = dir === 1 ? leftX : rightX
   const carEndPos   = dir === 1 ? rightX : leftX
