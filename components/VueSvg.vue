@@ -7,7 +7,7 @@
             <polygon id="poly2" points="60,28 86,90 74,90 60,62 46,90 34,90"
                     fill="#41b883"/>
             <polygon id="poly3" points="60,40 72,70 60,40 48,70" fill="none" stroke="#35495e" stroke-width="2" opacity="1"/>
-             <text x="80%" y="99%" font-size="14" font-family="mono" font-weight="bold"
+             <text x="80%" y="99%" font-size="16" font-family="mono" font-weight="bold"
                 fill="gray-700" text-anchor="middle" dominant-baseline="middle" class="name" opacity="1"
             >
                 Vue Js
