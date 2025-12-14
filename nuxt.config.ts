@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
     'v-gsap-nuxt',
+    '@nuxtjs/google-fonts',
   ],
   compatibilityDate : '2025-06-15',
   css: ['~/assets/css/tailwind.css'],
@@ -32,5 +33,14 @@ export default defineNuxtConfig({
     composable: true,
     breakpoint: 768,
     scroller: ''
+  },
+  googleFonts: {
+    families: {
+      'Playfair Display': {
+        wght: [400, 500, 600],
+      }
+    },
+    display: 'swap',
+    preload: true,
   },
 })

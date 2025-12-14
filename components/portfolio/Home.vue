@@ -1,17 +1,17 @@
 <template>
     <div class="grid grid-cols-2 h-screen w-100vw text-gray-900">
-        <div class="flex flex-col justify-center items-center font-mono">
+        <div class="flex flex-col justify-center items-center font-primary">
             <p class="name text-2xl font-extrabold">Ataur</p>
             <p class="name text-2xl font-extrabold">Rahaman</p>
             <ol class="interest text-md font-bold pt-8 p-2">
-                <li> Research Interest:</li>
+                <li> Research Focus:</li>
                 <li>@ NLP</li>
                 <li>@ Knowledge graph</li>
                 <li>@ Mining software repositories</li>
                 <li>@ Software analytics</li>
             </ol>
         </div>
-        <div class="flex flex-col justify-center font-mono items-center">
+        <div class="flex flex-col justify-center font-primary items-center">
             <section class="text-md font-bold mb-10">Working with</section>
             <SpringBootSvg />
             <VueSvg/>

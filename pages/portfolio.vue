@@ -3,11 +3,15 @@
     <PortfolioHome class="slide h-screen w-screen flex-shrink-0" />
     <ExperienceSlide class="slide h-screen w-screen flex-shrink-0" />
     <ProjectSlide class="slide project-slide h-screen w-screen flex-shrink-0" />
+    <CertificationSlide class="slide project-slide h-screen w-screen flex-shrink-0" />
+    <PublicationSlide class="slide project-slide h-screen w-screen flex-shrink-0" />
     <CarSvg id="car" class="absolute z-30 bottom-20 left-0"/>
   </div>
 </template>
 
 <script setup lang="ts">
+import CertificationSlide from '~/components/CertificationSlide.vue';
+
 definePageMeta({ layout: "bio" })
 const gsap = useGSAP()
 let isAnimating = false

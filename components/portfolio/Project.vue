@@ -1,16 +1,15 @@
 <template>
-<div class="flex w-full items-stretch py-4">
-  <div class="w-2/5 flex items-start font-bold text-lg pl-4">
+<div class="flex flex-col w-full pl-8 py-4 text-md gap-2">
+  <div class="flex items-start font-bold">
     {{ details?.name }}
   </div>
-  <div class="border-l-2 border-dashed border-gray-800 mx-4"></div>
-  <div class="w-3/5 flex flex-col gap-2">
-    <div class="flex gap-2 items-center">
+  <div class="flex flex-col font-primary text-blue-900">
+    <div class="flex items-center gap-2">
       <Icon name="mdi:github" size="18" />
       <a
         v-if="details?.github"
         :href="details.github"
-        class="flex items-center font-bold gap-2 text-blue-900 underline"
+        class="flex items-center underline"
       >
         {{ details.githubAlt }}
       </a>
@@ -19,7 +18,7 @@
       <Icon name="mdi:link-variant" size="18" />
       <a
         :href="details.link"
-        class="flex items-center font-bold gap-2 text-blue-900 underline"
+        class="flex items-center underline"
       >
         {{ details.linkAlt }}
       </a>

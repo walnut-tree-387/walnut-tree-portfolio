@@ -5,7 +5,7 @@
     </ClientOnly>
 
     <div v-if="!showLanding">
-      <PortfolioNav class="fixed top-0 left-0 right-0 z-50" />
+      <PortfolioNavbar class="fixed top-0 left-0 right-0 z-50" />
       <slot />
     </div>
   </div>
@@ -25,6 +25,6 @@ onMounted(() => {
   setTimeout(() => {
     showLanding.value = false
     localStorage.setItem('landing-complete', 'true')
-  }, 7000)
+  }, 3000)
 })
 </script>

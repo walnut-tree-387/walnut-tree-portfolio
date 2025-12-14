@@ -13,7 +13,11 @@ const config: Config = {
       colors: {
         primary: '#1e40af',
         darkbg: '#0f172a'
-      }
+      },
+      fontFamily: {
+        primary: ['"Playfair Display"', 'serif'],
+        secondary: ['Inter', 'ui-sans-serif', 'system-ui'],
+      },
     }
   }
 }
