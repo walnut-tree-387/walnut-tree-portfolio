@@ -16,21 +16,21 @@ const projectList = ref([
     {
       name: 'Portfolio (3D)',
       github: 'https://github.com/walnut-tree-387/walnut-tree-portfolio',
-      githubAlt: 'Walnut Tree Portfolio Repository',
+      githubAlt: 'Repository',
       link: 'https://walnut-tree.netlify.app',
-      linkAlt: 'walnut-tree.netlify.app'
+      linkAlt: 'Live'
     },
     {
       name: 'Huddle Messaging App)',
       github: 'https://github.com/walnut-tree-387/Huddles_Backend',
-      githubAlt: 'Huddles Backend Repository'
+      githubAlt: 'Repository'
     },
     {
       name: 'Handwritten Digit Recognition With MNIST Datasets',
       github: 'https://github.com/walnut-tree-387/Digit-Recognition-with-MNIST-Datasets-from-Kaggle',
-      githubAlt: 'Digit Recognition Repository',
+      githubAlt: 'Repository',
       link: 'https://digit-recognizer.streamlit.app',
-      linkAlt: 'Streamlit App'
+      linkAlt: 'Live'
     }
 ])
 </script>

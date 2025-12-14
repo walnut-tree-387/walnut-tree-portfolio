@@ -7,12 +7,11 @@
             <div @click="openSlide('Projects')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Projects</span>
             </div>
-
-            <div @click="openSlide('Publications')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
-                <span class="text-lg text-gray-700 font-mono">Publications</span>
-            </div>
             <div @click="openSlide('Certifications')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg text-gray-700 font-mono">Certifications</span>
+            </div>
+            <div @click="openSlide('Publications')" class="border-b border-amber-800 flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
+                <span class="text-lg text-gray-700 font-mono">Publications</span>
             </div>
         </div>
         <div class="pt-4 mb-20">
@@ -31,7 +30,8 @@ const map: Record<string, number> = {
     Home: 0,
     Experience: 1,
     Projects: 2,
-    Publications: 3
+    Certifications: 3,
+    Publications: 4
   }
 const openSlide = (slideName : string) => {
     emit('close')
