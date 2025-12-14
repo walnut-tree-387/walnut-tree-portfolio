@@ -1,5 +1,5 @@
 <template>
-  <div class="text-scale flex w-screen h-100vh items-center justify-center border-b border-dashed border-gray-800">
+  <div class="text-scale flex w-screen h-100vh items-center justify-center">
     <div class="p-2">
         <div class="flex flex-col items-center text-center p-2">
             <span class="text-lg font-bold">{{ details?.companyName }}</span>

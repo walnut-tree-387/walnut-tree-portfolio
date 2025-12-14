@@ -1,9 +1,9 @@
 <template>
   <div class="relative h-screen w-100vw overflow-hidden">
-    <div class="-z-10 absolute inset-0 bg-amber-100 wave-divider1 pointer-events-none">
+    <!-- <div class="-z-10 absolute inset-0 bg-gray-200 wave-divider1 pointer-events-none">
     </div>
-    <div class="-z-10 absolute inset-0 bg-amber-800 wave-divider2 pointer-events-none">
-    </div>
+    <div class="-z-10 absolute inset-0 bg-gray-700 wave-divider2 pointer-events-none">
+    </div> -->
     <PortfolioProjectList />
   </div>
 </template>

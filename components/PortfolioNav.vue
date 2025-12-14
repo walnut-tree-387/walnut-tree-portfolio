@@ -2,23 +2,24 @@
     <div class="flex justify-between w-screen m-4">
         <WalnutLogo class="z-30"/>
         <Icon ref="menuIcon" class="z-30 mr-10 mt-2" @click="toggleMenu" :name="iconName" :size="32"/>
-        <div class="backdrop z-20 h-100vh fixed rounded-full bg-gray-200" style="width: 200px; height: 200px; transform: scale(0);"></div>
+        <div class="backdrop z-20 h-100vh fixed rounded-full bg-amber-100" style="width: 200px; height: 200px; transform: scale(0);"></div>
         <div 
-            v-if="isOpen" 
-            class="fixed inset-y-20 inset-x-5 w-100vw z-30 bg-transparent"
+            v-if="menuVisible" 
+            class="fixed inset-y-20 inset-x-5 w-100vw z-30"
             >
             <PortfolioMenuContent @close="toggleMenu"/>
         </div>
     </div>
 </template>
 <script setup lang="ts">
-
+const menuVisible = ref(false)
 const isOpen = ref(false)
 const iconName = ref('arcticons:hamburger-menu')
 const menuIcon = ref<HTMLElement | null>(null)
 const toggleMenu = () => {
     isOpen.value = !isOpen.value;
     if(isOpen.value){
+        menuVisible.value = true
         openSplashScreen()
         iconName.value = 'arcticons:fujifilm-xapp'
     }else{
@@ -50,6 +51,9 @@ const closeSplashScreen = () => {
         scale: 0,
         duration: 0.6,
         ease: "power2.in",
+        onComplete() {
+            menuVisible.value = false
+        }
     })
 }
 </script>
