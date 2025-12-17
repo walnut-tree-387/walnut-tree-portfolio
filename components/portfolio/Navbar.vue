@@ -15,7 +15,7 @@
 const menuVisible = ref(false)
 const isOpen = ref(false)
 const iconName = ref('arcticons:hamburger-menu')
-const menuIcon = ref<HTMLElement | null>(null)
+const menuIcon = ref<ComponentPublicInstance | null>(null)
 const toggleMenu = () => {
     isOpen.value = !isOpen.value;
     if(isOpen.value){

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center">
-    No certification found
+  <div class="relative h-screen w-100vw overflow-hidden px-4">
+    <PortfolioCertificationList />
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-   <div class="relative flex flex-col items-center justify-center top-15">
+   <div class="px-4  py-15 flex flex-col items-center justify-center">
     <span class="text-xl w-full text-center font-bold border-b border-dashed border-gray-800 pb-4"
     >
       Projects
