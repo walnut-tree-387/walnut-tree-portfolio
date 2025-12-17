@@ -37,7 +37,7 @@ onMounted(() => {
   const tl = gsap.timeline({
     onComplete: () => emit('done')
   })
-  tl.set(car, {scale: 3})
+  tl.set(car, {scale: 2.5})
   tl.fromTo(car, { x: -200, y: 200 }, { x: 600, y:200, duration: 1, ease: 'power2.out' })
   .to(
     text,{
