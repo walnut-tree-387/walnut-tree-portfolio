@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col justify-center items-center top-15">
+  <div class="w-full py-15 px-4 flex flex-col justify-center items-center">
     <span class="text-xl w-full text-center font-bold border-b border-dashed border-gray-800 pb-4">Work Experience</span>
     <PortfolioExperience
       v-for="company in companyList"

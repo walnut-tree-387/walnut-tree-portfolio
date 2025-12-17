@@ -1,5 +1,5 @@
 <template>
-        <svg id="car" width="40px" height="40px" viewBox="0 0 1024 1024" class="icon absolute" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+        <svg id="car" viewBox="0 0 1024 1024" class="w-12 h-12 sm:w-10 sm:h-10 md:w-8 md:h-8 icon absolute" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
 
             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
