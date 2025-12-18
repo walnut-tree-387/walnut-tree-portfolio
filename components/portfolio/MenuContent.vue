@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col h-screen justify-between font-primary pb-4 text-primary">
+    <div class="flex flex-col h-screen justify-between font-primary pb-4 text-gray-800">
         <div class="flex flex-col">
             <div @click="openSlide('Experience')" class="border-b border-t border-primary flex items-center px-4 py-2 active:bg-amber-200 cursor-pointer group">
                 <span class="text-lg">Experience</span>

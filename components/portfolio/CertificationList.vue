@@ -19,7 +19,7 @@
         class="cert-card"
       />
     </div>
-    <div class="flex gap-4 mt-15 items-center text-primary font-primary">
+    <div class="flex gap-4 mt-15 items-center text-gray-800 font-primary">
       <Button
         @click="prevPage"
         :disabled="currentPage === 1"
