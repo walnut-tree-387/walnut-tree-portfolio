@@ -1,14 +1,13 @@
 <template>
-    <div class="grid grid-cols-2 h-screen w-100vw text-gray-900">
-        <div class="flex flex-col justify-center items-center font-primary">
+    <div class="grid grid-cols-2 h-screen w-100vw text-primary font-primary">
+        <div class="flex flex-col justify-center items-center">
             <p class="name text-2xl font-extrabold">Ataur</p>
             <p class="name text-2xl font-extrabold">Rahaman</p>
-            <ol class="interest text-md font-bold pt-8 p-2">
+            <ol class="interest text-md font-bold pt-8">
                 <li> Research Focus:</li>
                 <li>@ NLP</li>
-                <li>@ Knowledge graph</li>
-                <li>@ Mining software repositories</li>
-                <li>@ Software analytics</li>
+                <li>@ Software Engineering</li>
+                <li>@ AI-IoT</li>
             </ol>
         </div>
         <div class="flex flex-col justify-center font-primary items-center">
