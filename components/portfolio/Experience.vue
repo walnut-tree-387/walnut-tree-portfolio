@@ -9,7 +9,7 @@
             <span
                 v-for="skill in details?.skills"
                 :key="skill"
-                class="chip text-sm px-2 py-1 rounded-full"
+                class="chip bg-amber-100 text-sm px-2 py-1 rounded-full"
                 >
                 {{ skill }}
             </span>
@@ -28,7 +28,7 @@ onMounted(() => {
   gsap.to('.chip', {
     opacity: 0.5,
     scale: 0.9,
-    duration: 0.5,
+    duration: 1,
     repeat: -1, 
     yoyo: true,
     ease: 'sine.inOut',

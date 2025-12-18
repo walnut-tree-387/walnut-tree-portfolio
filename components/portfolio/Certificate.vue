@@ -29,7 +29,7 @@
           <span
             v-for="skill in details?.skills"
             :key="skill"
-            class="chip text-[10px] px-2 py-0.5 rounded-full"
+            class="chip bg-amber-100 text-[10px] px-2 py-0.5 rounded-full"
           >
             {{ skill }}
           </span>
