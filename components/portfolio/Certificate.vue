@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative group rounded-lg shadow-sm
-      transition hover:shadow-md hover:-translate-y-0.5 text-primary"
+      transition hover:shadow-md hover:-translate-y-0.5 text-gray-800"
     >
     <a
       v-if="details?.link"

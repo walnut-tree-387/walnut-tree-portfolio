@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full px-8 py-16 flex flex-col items-center gap-10 font-primary text-primary">
+  <div class="w-full px-8 py-16 flex flex-col items-center gap-10 font-primary text-gray-800">
     <h2
-      class="text-xl font-bold border-b border-primary border-dashed pb-4 w-full max-w-5xl text-center"
+      class="text-xl font-bold border-b border-gray-800 border-dashed pb-4 w-full max-w-5xl text-center"
     >
       Research And Acheivements
     </h2>

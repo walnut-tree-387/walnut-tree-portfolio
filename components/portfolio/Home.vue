@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 h-screen w-100vw text-primary font-primary">
+    <div class="grid grid-cols-2 h-screen w-100vw text-gray-800 font-primary">
         <div class="flex flex-col justify-center items-center">
             <p class="name text-2xl font-extrabold">Ataur</p>
             <p class="name text-2xl font-extrabold">Rahaman</p>
