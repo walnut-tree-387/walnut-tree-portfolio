@@ -19,12 +19,11 @@
         class="cert-card"
       />
     </div>
-    <div class="flex gap-4 mt-15 items-center">
+    <div class="flex gap-4 mt-15 items-center text-primary font-primary">
       <Button
         @click="prevPage"
         :disabled="currentPage === 1"
-        class="px-4 py-2 text-sm border rounded
-               disabled:opacity-40 disabled:cursor-not-allowed"
+        class="px-4 py-2 text-sm border rounded disabled:opacity-40 disabled:cursor-not-allowed"
       >
         Previous
       </Button>

@@ -6,19 +6,25 @@ const config: Config = {
     './components/**/*.{vue,js,ts}',
     './layouts/**/*.vue',
     './pages/**/*.vue',
-    './app.vue'
+    './app.vue',
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#1e40af',
-        darkbg: '#0f172a'
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+
+        primary: 'var(--primary)',
+        'primary-foreground': 'var(--primary-foreground)',
+        secondary: 'var(--secondary)',
+        'secondary-foreground': 'var(--secondary-foreground)',
       },
       fontFamily: {
         primary: ['"Playfair Display"', 'serif'],
         secondary: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
-    }
-  }
+    },
+  },
 }
+
 export default config
